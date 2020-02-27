@@ -8,7 +8,7 @@ styleUrls: ['./app.component.css']
 export class AppComponent {
 stocks: Array<StockInterface>;
 constructor(service: StocksService) {
-service.load(['AAPL']).subscribe(stocks => {
+service.load(['AAPL,GOOG']).subscribe(stocks => {
 this.stocks = stocks;
 });
 }
